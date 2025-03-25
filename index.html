@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriflame Products</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/Logo.JPG" type="image/JPG">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar d-flex justify-content-between">
+        <div  class="brand"> <img style="height: 40px; width: 40px;" src="images/WIESEL LOGO.png" alt=""> Wiesel Business</div>
+        <div class="menu-icon" onclick="openMenu()"><i class="bi bi-list"></i></div> <!-- 3-dash menu -->
+    </nav>
+
+    <!-- Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay">
+        <span class="close-menu" onclick="closeMenu()">&times;</span>
+        <div class="menu-overlay-content">
+            <a href="https://forms.gle/Qm9myNPDCXgZdwVQ8"><i class="bi bi-link-45deg"></i> Get a Wiesel Link</a>
+            <a href="mailto:wieselbusinessservices@gmail.com"><i class="bi bi-envelope"></i> Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Business Card -->
+    <div class="business-card">
+        <img src="images/Logo.JPG" alt="Profile">
+        <div class="business-info">
+            <div class="business-name">Oriflame Cosmetics   </div>
+            <div class="sales">Sold: 0</div>
+            <div class="meta-info">Joined: March 2025 | Products: 3</div>
+        </div>
+        <div class="icons">
+            <i class="bi bi-chat-dots" onclick="sendWhatsAppMessage()"></i> <!-- Message (WhatsApp) -->
+            <i class="bi bi-telephone" onclick="makePhoneCall()"></i> <!-- Call -->
+        </div>
+        
+    </div>
+
+    <!-- Buy This Product 
+    <div class="buy-text">Buy This Product</div>
+-->
+    <!-- Product Card -->
+ 
+    <div class="container">
+
+        <div class="row g-2">
+            <div class="col-md-12">
+                <div class="product-card" style="background-image: url('images/Feminelle Wash.JPG');">
+                    <div class="product-info">
+                        <div class="product-title">Feminelle Wash</div>
+                        <div class="product-price">₦16,000</div>
+                        <div class="product-description">Feel fresh & confident all day long... This product has 4 types 1. Protecting 2. Nuturing 3. Gentle 4. Soothing</div>
+                        <a href="https://paystack.com/pay/Oriflame" class="buy-now">Buy Now</a>
+                        <a href="allproducts.html" id="see-more-btn" class="see-more-btn">See More Products</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+   
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p style="color: #777;">We are dedicated to providing high-quality services that connect people and businesses. Thank you for choosing us!</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://forms.gle/Qm9myNPDCXgZdwVQ8">Get a buy Link</a></li>
+                    <li><a href="wieselbusinessservices@gmail.com">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul  style="color: #777">
+                    <li>Email: wieselbusinessservices@gmail.com</li>
+                    <li>Phone: +234 902 243 0387</li>
+                    <li>Address: Lagos , Nigeria </li>
+                </ul>
+            </div>
+
+          
+           
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Wiesel. All Rights Reserved.</p>
+    </div>
+
+   <!-- Bottom Navigation -->
+   <div class="bottom-nav">
+    <div hre class="scrolling-text">
+       <a style="  text-decoration: none;" href="https://forms.gle/Qm9myNPDCXgZdwVQ8"> Want customers to buy instantly? Try our Wiesel link for instant buying, attach with your social media pages, web pages, etc.</a>
+    </div>
+</div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function openMenu() {
+            document.getElementById("menuOverlay").style.width = "100%";
+        }
+
+        function closeMenu() {
+            document.getElementById("menuOverlay").style.width = "0";
+        }
+    </script>
+<script>
+    function sendWhatsAppMessage() {
+    // Replace with the WhatsApp number you want users to message
+    const phoneNumber = "+2348110924344";  // Nigerian number format (modify accordingly)
+    const message = "Hello, I’d like to inquire about your product."; // Default message
+
+    // Redirects to WhatsApp chat
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
+}
+
+function makePhoneCall() {
+    // Replace with the phone number you want users to call
+    const phoneNumber = "+2348110924344"; // Nigerian number format or any valid number
+    window.location.href = `tel:${phoneNumber}`; // Initiates a call
+}
+
+</script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
